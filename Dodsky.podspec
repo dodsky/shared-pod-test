@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'Dodsky'
-    spec.version                  = '0.0.7'
+    spec.version                  = '0.0.8'
     spec.homepage                 = 'https://www.phishar.com'
     spec.source                   = { :git => 'https://github.com/dodsky/shared-pod-test.git', :tag => '0.0.8' }
     spec.authors                  = ''
