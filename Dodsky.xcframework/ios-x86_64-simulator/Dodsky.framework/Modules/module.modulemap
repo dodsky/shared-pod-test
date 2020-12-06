@@ -1,0 +1,6 @@
+framework module Dodsky {
+    umbrella header "Dodsky.h"
+
+    export *
+    module * { export * }
+}

@@ -13,29 +13,29 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic ignored "-Wnullability"
 
 __attribute__((swift_name("KotlinBase")))
-@interface SharedBase : NSObject
+@interface DodskyBase : NSObject
 - (instancetype)init __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 + (void)initialize __attribute__((objc_requires_super));
 @end;
 
-@interface SharedBase (SharedBaseCopying) <NSCopying>
+@interface DodskyBase (DodskyBaseCopying) <NSCopying>
 @end;
 
 __attribute__((swift_name("KotlinMutableSet")))
-@interface SharedMutableSet<ObjectType> : NSMutableSet<ObjectType>
+@interface DodskyMutableSet<ObjectType> : NSMutableSet<ObjectType>
 @end;
 
 __attribute__((swift_name("KotlinMutableDictionary")))
-@interface SharedMutableDictionary<KeyType, ObjectType> : NSMutableDictionary<KeyType, ObjectType>
+@interface DodskyMutableDictionary<KeyType, ObjectType> : NSMutableDictionary<KeyType, ObjectType>
 @end;
 
-@interface NSError (NSErrorSharedKotlinException)
+@interface NSError (NSErrorDodskyKotlinException)
 @property (readonly) id _Nullable kotlinException;
 @end;
 
 __attribute__((swift_name("KotlinNumber")))
-@interface SharedNumber : NSNumber
+@interface DodskyNumber : NSNumber
 - (instancetype)initWithChar:(char)value __attribute__((unavailable));
 - (instancetype)initWithUnsignedChar:(unsigned char)value __attribute__((unavailable));
 - (instancetype)initWithShort:(short)value __attribute__((unavailable));
@@ -69,74 +69,74 @@ __attribute__((swift_name("KotlinNumber")))
 @end;
 
 __attribute__((swift_name("KotlinByte")))
-@interface SharedByte : SharedNumber
+@interface DodskyByte : DodskyNumber
 - (instancetype)initWithChar:(char)value;
 + (instancetype)numberWithChar:(char)value;
 @end;
 
 __attribute__((swift_name("KotlinUByte")))
-@interface SharedUByte : SharedNumber
+@interface DodskyUByte : DodskyNumber
 - (instancetype)initWithUnsignedChar:(unsigned char)value;
 + (instancetype)numberWithUnsignedChar:(unsigned char)value;
 @end;
 
 __attribute__((swift_name("KotlinShort")))
-@interface SharedShort : SharedNumber
+@interface DodskyShort : DodskyNumber
 - (instancetype)initWithShort:(short)value;
 + (instancetype)numberWithShort:(short)value;
 @end;
 
 __attribute__((swift_name("KotlinUShort")))
-@interface SharedUShort : SharedNumber
+@interface DodskyUShort : DodskyNumber
 - (instancetype)initWithUnsignedShort:(unsigned short)value;
 + (instancetype)numberWithUnsignedShort:(unsigned short)value;
 @end;
 
 __attribute__((swift_name("KotlinInt")))
-@interface SharedInt : SharedNumber
+@interface DodskyInt : DodskyNumber
 - (instancetype)initWithInt:(int)value;
 + (instancetype)numberWithInt:(int)value;
 @end;
 
 __attribute__((swift_name("KotlinUInt")))
-@interface SharedUInt : SharedNumber
+@interface DodskyUInt : DodskyNumber
 - (instancetype)initWithUnsignedInt:(unsigned int)value;
 + (instancetype)numberWithUnsignedInt:(unsigned int)value;
 @end;
 
 __attribute__((swift_name("KotlinLong")))
-@interface SharedLong : SharedNumber
+@interface DodskyLong : DodskyNumber
 - (instancetype)initWithLongLong:(long long)value;
 + (instancetype)numberWithLongLong:(long long)value;
 @end;
 
 __attribute__((swift_name("KotlinULong")))
-@interface SharedULong : SharedNumber
+@interface DodskyULong : DodskyNumber
 - (instancetype)initWithUnsignedLongLong:(unsigned long long)value;
 + (instancetype)numberWithUnsignedLongLong:(unsigned long long)value;
 @end;
 
 __attribute__((swift_name("KotlinFloat")))
-@interface SharedFloat : SharedNumber
+@interface DodskyFloat : DodskyNumber
 - (instancetype)initWithFloat:(float)value;
 + (instancetype)numberWithFloat:(float)value;
 @end;
 
 __attribute__((swift_name("KotlinDouble")))
-@interface SharedDouble : SharedNumber
+@interface DodskyDouble : DodskyNumber
 - (instancetype)initWithDouble:(double)value;
 + (instancetype)numberWithDouble:(double)value;
 @end;
 
 __attribute__((swift_name("KotlinBoolean")))
-@interface SharedBoolean : SharedNumber
+@interface DodskyBoolean : DodskyNumber
 - (instancetype)initWithBool:(BOOL)value;
 + (instancetype)numberWithBool:(BOOL)value;
 @end;
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Greeting")))
-@interface SharedGreeting : SharedBase
+@interface DodskyGreeting : DodskyBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (NSString *)greeting __attribute__((swift_name("greeting()")));
@@ -144,7 +144,7 @@ __attribute__((swift_name("Greeting")))
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Platform")))
-@interface SharedPlatform : SharedBase
+@interface DodskyPlatform : DodskyBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 @property (readonly) NSString *platform __attribute__((swift_name("platform")));

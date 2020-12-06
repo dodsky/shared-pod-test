@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
-    spec.name                     = 'Shared'
+    spec.name                     = 'Dodsky'
     spec.version                  = '0.0.7'
     spec.homepage                 = 'https://www.phishar.com'
-    spec.source                   = { :git => 'https://github.com/dodsky/shared-pod-test.git', :tag => '0.0.7' }
+    spec.source                   = { :git => 'https://github.com/dodsky/shared-pod-test.git', :tag => '0.0.8' }
     spec.authors                  = ''
     spec.license                  = { :type => 'MIT', :text => '' }
     spec.summary                  = 'PhishAR Cocoapod'
@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
     spec.platform                 = :ios
     spec.ios.deployment_target    = '9.0'
     spec.static_framework         = true
-    spec.vendored_frameworks      = "Shared.xcframework"
+    spec.vendored_frameworks      = "Dodsky.xcframework"
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
