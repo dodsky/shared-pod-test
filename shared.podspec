@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'shared'
-    spec.version                  = '0.0.10'
+    spec.version                  = '0.0.11'
     spec.homepage                 = 'https://www.phishar.com'
-    spec.source                   = { :git => 'https://github.com/dodsky/shared-pod-test.git', :tag => '0.0.10' }
+    spec.source                   = { :git => 'https://github.com/dodsky/shared-pod-test.git', :tag => '0.0.11' }
     spec.authors                  = ''
     spec.license                  = { :type => 'MIT', :text => '' }
     spec.summary                  = 'PhishAR Cocoapod'

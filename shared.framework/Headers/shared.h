@@ -230,6 +230,7 @@ __attribute__((swift_name("UrlParser")))
 @protocol SharedUrlParser
 @required
 - (NSString * _Nullable)getHostUrl:(NSString *)url __attribute__((swift_name("getHost(url:)")));
+- (NSString * _Nullable)getTopPrivateDomainUrl:(NSString *)url __attribute__((swift_name("getTopPrivateDomain(url:)")));
 - (BOOL)isUrlText:(NSString *)text __attribute__((swift_name("isUrl(text:)")));
 @end;
 
